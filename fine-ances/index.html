@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>BlackRounded</title>
+<title>Fine-ances</title>
 <meta http-equiv="Content-Language" content="English" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="screen" />
@@ -32,12 +32,12 @@
       {% else %}
        An anonymous person wrote:
       {% endif %}
-      <blockquote>{{ greeting.content|escape }}</blockquote>
+      <blockquote><p>{{ greeting.content|escape }}</p></blockquote>
     {% endfor %}
 
     <form action="/sign" method="post">
       <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Sign Guestbook"></div>
+      <div><input type="submit" value="Sign Guestbook" /></div>
     </form>
 
     <a href="{{ url }}">{{ url_linktext }}</a>
