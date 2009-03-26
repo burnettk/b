@@ -13,6 +13,7 @@ handlers:
 - url: /favicon.ico
   static_files: images/favicon.ico
   upload: images/favicon.ico
+  mime_type: image/vnd.microsoft.icon
 
 - url: /.*
   script: fine-ances.py
